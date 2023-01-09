@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    scrollbar-width: none;
+
+}
+
+body {
+    overflow-x: hidden;
+    height: 1200px;
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+.navbar-scrolled {
+    background: rgba(245, 245, 245, 1);
+}
+
+.age {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(216, 216, 216);
+    /* this is the fallback */
+    -webkit-text-stroke: 1px rgb(211, 211, 211);
+    -webkit-text-fill-color: transparent;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 90px;
+    text-align: center;
+    /* font-size: 5em; */
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(gold, gold);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+    cursor: pointer;
+}
+
+.age:hover {
+    color: rgb(0, 0, 0);
+    /* this is the fallback */
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+  
+    text-align: center;
+    z-index: 999;
+    /* height: 20%; */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}

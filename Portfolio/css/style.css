@@ -1,0 +1,189 @@
+html {
+    scrollbar-width: none;
+}
+
+body {
+    overflow-x: hidden;
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+.navbar-scrolled {
+    background: rgba(245, 245, 245, 1);
+}
+
+@media only screen and (max-width: 600px) {}
+
+#Lastbackground {
+    width: 30vw;
+    height: 100vh;
+}
+
+.scrollSkill {
+    overflow-x: scroll;
+    width: 80px;
+}
+
+#life {
+    display: inline-block;
+}
+
+.scroll {}
+
+.slider {
+    height: 375px;
+    position: relative;
+    width: inherit;
+    display: grid;
+    place-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.sliderTrack {
+    /* width: calc(250px*18); */
+    width: max-content;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(calc(-250px*0));
+    }
+}
+
+#blob {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    width: 50%;
+    display: none;
+
+
+}
+
+.box1 {
+    transition: box-shadow .3s;
+    box-shadow: none;
+}
+
+.box1:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+
+.box-wrap {}
+
+.box {
+    transition: .2s all;
+}
+
+.box-wrap:hover .box {
+    filter: blur(3px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+.box-wrap:hover .box:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+.console-container {
+
+    font-family: 'Nunito', sans-serif;
+    ;
+    font-size: 3em;
+    text-align: center;
+    height: 200px;
+    width: 600px;
+    display: block;
+    position: absolute;
+    color: white;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+
+
+svg {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+boxLet {
+
+    transition: transform 0.25s;
+    will-change: transform;
+
+
+}
+
+
+
+
+
+
+.skyPhoto {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 90vh;
+}
+
+.sky {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .1);
+    line-height: 0;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.sky img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+
+
+.sky:hover {
+    flex: 1 1 50%;
+}
+
+.sky:hover img {
+    width: 100%;
+    height: 100%;
+}

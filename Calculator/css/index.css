@@ -1,0 +1,121 @@
+@importurl ('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: transparent;
+}
+
+body {
+    background-color: #fdefef;
+    font-family: "Space Mono", monospace;
+}
+
+.container {
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+
+
+
+
+}
+
+.calculator {
+    border: 1px solid black;
+    background-color: #fff5eb;
+    box-shadow: 8px 4px 10px #dad0c2b4;
+    padding: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(6, 80px);
+    grid-template-areas:
+        "output output output output"
+        "tombol tombol tombol tombol"
+        "tombol tombol tombol tombol"
+        "tombol tombol tombol tombol"
+        "tombol tombol tombol tombol"
+        "equal equal equal equal";
+    justify-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.output {
+    grid-area: output;
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.068) inset;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 26px;
+    overflow: hidden;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    background-color: #f4c7ab;
+
+
+
+
+}
+
+&:hover {
+    background-color: #deedf0;
+    transition: 0.2s;
+}
+
+&:active {
+    background-color: #aae3ee;
+}
+
+.equal {
+    grid-area: equal;
+    width: 100%;
+}
+
+
+@media (max-width: 490px) {
+    .calculator {
+        width: 280px;
+        height: 360px;
+        padding: 20px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-template-rows: repeat(6, 50px);
+        column-gap: 2px;
+        row-gap: 2px;
+    }
+}
+}
+
+@media (max-width: 350px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .calculator {
+        width: 99%;
+        height: 400px;
+        padding: 4px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 18%);
+        grid-template-rows: repeat(6, 60px);
+        column-gap: 4px;
+        row-gap: 4px;
+    }
+}
