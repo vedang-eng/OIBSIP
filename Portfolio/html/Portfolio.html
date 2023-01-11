@@ -17,8 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/Portfolio/css/style.css">
-    <link rel="shortcut icon" href="/Portfolio/img/vedang surnis.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/vedang surnis.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -29,8 +30,7 @@
         <div class="container">
             <!-- Navbar brand -->
             <a class="navbar-brand" href="#">
-                <img src="/Portfolio/img/vedang surnis.jpg" height="36" alt="MDB Logo" loading="lazy"
-                    class="rounded-circle" />
+                <img src="/img/vedang surnis.jpg" height="36" alt="MDB Logo" loading="lazy" class="rounded-circle" />
 
             </a>
 
@@ -91,8 +91,8 @@
         <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
-    <div class="bg-image" style="  width: 100vw; height: 100vh;">
-        <img src="/Portfolio/img/pexels-mati-mango-6330644.jpg" class="w-100 h-100" alt="Louvre Museum"
+    <div class="bg-image" style="  width: 100vw; height: 100vh;" data-aos="fade-up">
+        <img src="/img/pexels-mati-mango-6330644.jpg" class="w-100 h-100" alt="Louvre Museum"
             style="background-size: cover; background-position: center;" />
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.5) ">
             <div class="d-flex flex-row flex-wrap-reverse justify-content-center align-items-center p-5 mt-4 text-white "
@@ -119,11 +119,12 @@
         </div>
     </div>
 
-    <div class="d-flex flex-column flex-wrap justify-content-center align-items-center p-5 boxLet" id="bio">
+    <div class="d-flex flex-column flex-wrap justify-content-center align-items-center p-5 boxLet" id="bio"
+        data-aos="fade-up">
         <div class="card mb-3" style="max-width: 700px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="/Portfolio/img/IMG-20220416-WA0017.jpg" alt="Trendy Pants and Shoes"
+                    <img src="/img/IMG-20220416-WA0017.jpg" alt="Trendy Pants and Shoes"
                         class="img-fluid rounded-start" />
                 </div>
                 <div class="col-md-8" style="background-color:rgba(245,245,245,1);">
@@ -149,13 +150,17 @@
 
 
         <div class="p-5 container-fluid d-flex flex-column  justify-content-center align-items-center" id="skill"
-            style="margin-top: 23px; margin-bottom: 23px;">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" id="blob" class="m-4 mb-5 bolb">
-                <path fill="#0F62FE"
-                    d="M51.6,-59.1C64.2,-50.9,69.8,-32.1,73.8,-12.6C77.8,7,80.2,27.3,71,38.9C61.8,50.4,41.1,53.2,22.7,58C4.3,62.9,-11.9,69.9,-25.3,66.4C-38.8,62.9,-49.7,48.9,-59.8,33.5C-69.8,18.2,-79,1.3,-76,-13.1C-73.1,-27.5,-58.1,-39.4,-43.4,-47.1C-28.7,-54.9,-14.4,-58.5,2.6,-61.5C19.5,-64.6,39,-67.2,51.6,-59.1Z"
-                    transform="translate(100 100)" />
-            </svg>
-            <h1 class="display-4 mb-4" style="text-align: center;">Skills</h1>
+            style="margin-top: 23px; margin-bottom: 23px;" data-aos="fade-up">
+            <h2 class=" " style="text-align: center; line-height: 25px; letter-spacing: 4px; font-size: 25px;">
+                <strong>
+                    <span style="font-family: Montserrat; font-weight: 700; font-style: normal; font-size: 19 px;">
+                        Technical Know How
+                    </span>
+                </strong>
+
+
+            </h2>
+            <!-- <h1 class="display-4 mb-4" style="text-align: center;">Skills</h1> -->
             <div class="d-flex slider">
 
                 <div class="sliderTrack d-flex  justify-content-center align-items-center p-5 box-wrap ">
@@ -269,7 +274,7 @@
 
 
         <div class="d-flex container-fluid d-flex flex-column  justify-content-center align-items-center p-5 my-4"
-            style="background-color:rgba(245,245,245,1);" id="help">
+            style="background-color:rgba(245,245,245,1);" id="help" data-aos="fade-up">
             <h2 class=" " style="text-align: center; line-height: 25px; letter-spacing: 7px; font-size: 25px;">
                 <strong>
                     <span style="font-family: Montserrat; font-weight: 700; font-style: normal; font-size: 19 px;">
@@ -286,67 +291,78 @@
                 </p>
 
                 <div class="d-flex  flex-column  p-5">
-                    <div class="d-flex p-5">
-                        <div style="display: inline-block; width: auto;" class="p-4 w-100 my-3">
+
+                    <div class="d-flex ">
+                        <div style="display: inline-block; width: auto;" class="w-50 my-3 p-3 aos-init mx-5 aos-animate"
+                            data-aos="fade-up">
                             <p class="h4" style="width: 80%;font-family: 'Nunito', sans-serif;">Front End Development {
                             </p>
 
 
-                            <p class="lead w-50">
-                                I've worked with individuals and teams to create experiences for SMEs and large
-                                corporations such as Wise, Google, Interswitch, and Intelia. }
+                            <p class="lead w-100" style="
+    text-align: justify;
+">
+                                Front-end web development, also known as client-side development is the practice of
+                                producing HTML, CSS and JavaScript for a website or Web Application so that a user can
+                                see and interact with them directly. }
                             </p>
 
                         </div>
-                        <div class="d-flex  p-2">
+                        <div class="d-flex p-2 aos-init w-50 aos-animate" data-aos="fade-up">
                             <img src="https://assets.website-files.com/6319f69c5ef0f35ae3db6df0/6331936b540a107e552ea2cb_Development%20Image%2001.svg"
-                                alt="">
+                                alt="" style="
+    width: 86%;
+">
                         </div>
                     </div>
                     <div class="d-flex p-5 ">
-                        <div class="d-flex w-100 ">
+                        <div class="d-flex w-100 aos-init aos-animate" data-aos="fade-up">
                             <img src="https://assets.website-files.com/6319f69c5ef0f35ae3db6df0/6331936b540a107e552ea2cb_Development%20Image%2001.svg"
-                                alt="">
+                                alt="" style="width: 78%;">
                         </div>
-                        <div style="display: inline-block; width: auto;" class="p-5 w-100 my-3">
+                        <div style="display: inline-block; width: auto;" class="w-100 my-3 aos-init aos-animate"
+                            data-aos="fade-up">
                             <p class="h4" style="width: 80%;font-family: 'Nunito', sans-serif;">Design {</p>
 
 
-                            <p class="lead w-60">
-                                I've worked with individuals and teams to create experiences for SMEs and large
-                                corporations such as Wise, Google, Interswitch, and Intelia. }
+                            <p class="lead w-100" style="text-align: justify;">
+                                Web design refers to the design of websites that are displayed on the internet. It
+                                usually refers to the user experience aspects of website development rather than
+                                software development. }
                             </p>
 
                         </div>
 
                     </div>
 
-                    <div class="d-flex p-5">
-                        <div style="display: inline-block; width: auto;" class="p-4 w-100 my-3">
+
+
+                    <div class="d-flex ">
+                        <div style="display: inline-block; width: auto;" class="w-50 my-3 p-3 aos-init mx-5 aos-animate"
+                            data-aos="fade-up">
                             <p class="h4" style="width: 80%;font-family: 'Nunito', sans-serif;">Back End Development {
                             </p>
 
 
-                            <p class="lead w-50">
-                                I've worked with individuals and teams to create experiences for SMEs and large
-                                corporations such as Wise, Google, Interswitch, and Intelia. }
+                            <p class="lead w-100" style="text-align: justify;">
+                                working on server-side software, which focuses on everything you can't see on a website.
+                                Ensure the website performs correctly, focusing on databases,
+                                back-end logic, application programming interface.<b>}</b>
                             </p>
 
                         </div>
-                        <div class="d-flex  p-2">
+                        <div class="d-flex p-2 aos-init w-50 aos-animate" data-aos="fade-up">
                             <img src="https://assets.website-files.com/6319f69c5ef0f35ae3db6df0/6331936b540a107e552ea2cb_Development%20Image%2001.svg"
-                                alt="">
+                                alt="" style="width: 86%;">
                         </div>
                     </div>
-                    <div>
 
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="d-flex flex-column  justify-content-center align-items-center p-5 my-4">
-            <h2 class=" " style="text-align: center; line-height: 25px; letter-spacing: 5px; font-size: 25px;">
+        <!-- <div class="d-flex flex-column  justify-content-center align-items-center p-5 my-4" data-aos="fade-up">
+            <h2 class="" style="text-align: center; line-height: 25px; letter-spacing: 5px; font-size: 25px;">
                 <strong>
                     <span
                         style="width: 54%; font-family: Montserrat; font-weight: 700; font-style: normal; font-size: 20px;">
@@ -361,33 +377,73 @@
                     <div class="sky">
 
                         <a href="https://www.pexels.com/@vedang-surnis-297240745/" target="_blank"><img
-                                src="/Portfolio/img/pexels-vedang-surnis-13328317.jpg"></a>
+                                src="/img/pexels-vedang-surnis-13328317.jpg"></a>
                     </div>
                     <div class="sky">
 
                         <a href="https://www.pexels.com/@vedang-surnis-297240745/" target="_blank"><img
-                                src="/Portfolio/img/pexels-vedang-surnis-14594236.jpg"></a>
+                                src="/img/pexels-vedang-surnis-14594236.jpg"></a>
                     </div>
                     <div class="sky">
 
                         <a href="https://www.pexels.com/@vedang-surnis-297240745/" target="_blank"><img
-                                src="/Portfolio/img/pexels-vedang-surnis-13294740.jpg"></a>
+                                src="/img/pexels-vedang-surnis-13294740.jpg"></a>
                     </div>
                     <div class="sky">
 
                         <a href="https://www.pexels.com/@vedang-surnis-297240745/" target="_blank"><img
-                                src="/Portfolio/img/pexels-vedang-surnis-14403256.jpg"></a>
+                                src="/img/pexels-vedang-surnis-14403256.jpg"></a>
                     </div>
                     <div class="sky">
 
                         <a href="https://www.pexels.com/@vedang-surnis-297240745/" target="_blank"><img
-                                src="/Portfolio/img/pexels-vedang-surnis-14802982.jpg"></a>
+                                src="/img/pexels-vedang-surnis-14802982.jpg"></a>
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="container-fluid d-flex flex-column  justify-content-center align-items-center p-5 my-4">
+            <h2 class=" " style="text-align: center; line-height: 25px; letter-spacing: 5px; font-size: 25px;">
+                <strong>
+                    <span
+                        style="width: 54%; font-family: Montserrat; font-weight: 700; font-style: normal; font-size: 20px;">
+                        I am Extremely Keen To Work On Cloudscape Photography
+                    </span>
+                </strong>
+
+
+            </h2>
+            <div class="container_img container mt-5">
+                <a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio" data-aos="fade-up">
+                    <img src="/img/pexels-vedang-surnis-14403256.jpg" />
+                </a>
+
+                <a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical"
+                    data-aos="fade-up">
+                    <img src="/img/pexels-vedang-surnis-13294740.jpg" />
+                </a>
+
+                <a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio" class="horizontal"
+                    data-aos="fade-up">
+                    <img src="/img/pexels-vedang-surnis-13328317.jpg" />
+                </a>
+
+                <a href="https://source.unsplash.com/600x600/?sig=32" data-lightbox="homePortfolio" data-aos="fade-up">
+                    <img src="/img/pexels-vedang-surnis-14594236.jpg" />
+                </a>
+
+                <a href="https://source.unsplash.com/600x600/?sig=32" data-lightbox="homePortfolio" data-aos="fade-up">
+                    <img src="/img/pexels-vedang-surnis-14802982.jpg" />
+                </a>
+                <a href="https://source.unsplash.com/600x600/?sig=32" data-lightbox="homePortfolio" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/600x600/?sig=32" />
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="p-5 container-fluid" id="Conatct" style="background-color:rgba(245,245,245,1);">
+        <div class="p-5 container-fluid" id="Conatct" style="background-color:rgba(245,245,245,1);" data-aos="fade-up">
             <h1 class="display-4 mb-3" style="text-align: center;">Contact Me</h1>
             <div class="d-flex flex-wrap justify-content-center align-items-center">
                 <div class="d-flex flex-row justify-content-center align-items-center p-5">
@@ -432,18 +488,18 @@
                             Near School Number One, Brahmanpuri Miraj
                         </p>
                     </div>
-                    <div class="d-flex my-2">
+                    <!-- <div class="d-flex my-2">
                         <img src="https://img.icons8.com/ios-glyphs/512/iphone.png" alt="img.pnj" class="mx-3"
                             style="width: 30px; height: 30px;">
                         <p class="lead">
                             +919623272323
                         </p>
-                    </div>
+                    </div> -->
                     <div class="d-flex my-2">
                         <img src="https://img.icons8.com/ios-glyphs/512/iphone.png" alt="img.pnj" class="mx-3"
                             style="width: 30px; height: 30px;">
                         <p class="lead">
-                            +919623272323
+                            +9359274805
                         </p>
                     </div>
                     <div class="d-flex my-2">
@@ -464,33 +520,31 @@
 
     </div>
 
-    <footer class="bg-light text-dark ">
+    <footer class="bg-light text-dark " data-aos="fade-up">
         <!-- Grid container -->
         <div class=" p-4 d-flex d-flex align-items-start flex-wrap-reverse"
             style="background-color:rgba(245,245,245,1);">
             <div class="p-3 mx-5 col d-flex flex-column align-items-start">
 
                 <div class="d-flex justify-content-center align-items-center mb-2">
-                    <img src="/Portfolio/img/vedang surnis.jpg" alt="MDB Logo" loading="lazy" height="90" />
+                    <img src="/img/vedang surnis.jpg" alt="MDB Logo" loading="lazy" height="90" />
                 </div>
 
 
 
-                <p style="width: 50vh;">Amazon is one of the largest global companies in existence
-                    and
-                    has
-                    grown to
+                <p style="width: 50vh;">
+                    Working to increase your occupation one pixel at a time.Generating in all spaces.
                 </p>
 
             </div>
 
             <div class="p-4 mx-5 col d-flex flex-column align-items-end">
 
-                <div class="d-flex p-4 mx-5 align-items-start">
-                    <a href="#" class="mx-4  text-dark" id="backTop">
+                <div class="d-flex p-4 ml-5 align-items-start">
+                    <a href="#" class="ml-5  text-dark" id="backTop">
                         <span>BACK TO TOP</span>
                     </a>
-                    <div>
+                    <div class="mx-2">
                         <img src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/getting-started-click-through/789a1ecf-o-arrow-grey-up.svg"
                             alt="Totop.svg">
                     </div>
@@ -530,13 +584,38 @@
         <div class="text-center p-3" style="background-color:rgba(245,245,245,1) ;">
             <span class="fw-light text-dark">© 2023 Copyright:</span>
             <a href="https://mdbootstrap.com/">
-                <span class="fw-light text-dark">Vedang Surnis ❤️</span>
+                <span class="fw-light text-dark">Vedang Surnis</span>
             </a>
         </div>
         <!-- Copyright -->
     </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
-    <script src="/Portfolio/js/index.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 600, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 
 
 </body>
