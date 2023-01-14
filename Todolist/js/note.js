@@ -71,7 +71,7 @@ function showNotes() {
     }
     //  let htmlIn;
     if (myObj == 0) {
-        InsertingNotes.innerHTML = `<h5 class="my-2 mb-3">Nothing to show add note by clicking on "Add Task"</h5>`;
+        InsertingNotes.innerHTML = `<h5 class="my-2 mb-3">Nothing to show add task by clicking on "Add Task"</h5>`;
     }
     else {
         InsertingNotes.innerHTML = "";
